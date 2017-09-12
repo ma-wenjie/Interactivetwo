@@ -1,0 +1,542 @@
+/* reset padding and margins */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: helvetica, arial, sans-serif;
+}
+
+/* container */
+
+.container {
+	position: relative;
+}
+
+/* items */
+
+.item {
+	height: 300px;
+	width: 300px;
+	background: blue;
+	color: yellow;
+
+	margin: 10px;
+
+	/* comment out 'float: left;' to have items stack in a single column */
+	float: left; 
+
+	/* uncomment this to get CSS transitions (conflicts with jQuery) */
+	transition: all 500ms ease;
+}
+
+/* example buttons */
+#button-1{
+	background-color: olive;
+	border-radius: 30px;
+}
+#button-1:hover {
+	transform: rotate(90deg) scale(1.5);
+	opacity: .3;
+	border-radius: 30px;
+}
+
+
+#button-1:active {
+	background: pink;
+	opacity: 1;
+	border-radius: 30px;
+}
+
+/* example buttons */
+
+
+#button-2{
+	background-color: Moccasin;
+	border-radius: 30px;
+}
+
+#button-2::after {
+	content: 'HI';
+	color: white;
+	text-align: center;
+	font-size: 40px;
+}
+
+
+#button-2:hover::after {
+	content: 'BYE';
+	color: Yellow;
+	text-align: center;
+}
+
+#button-3{
+	background-color: oldlace;
+	border-radius: 30px;
+}
+#button-4 {
+	background: red;
+	border-radius: 30px;
+
+}
+
+#button-4:hover {
+	background: lightblue;
+	border-radius: 30px;
+}
+
+#button-4:active {
+	background: goldenrod;
+	transform: rotate(45deg);
+}
+
+#button-5 {
+	background: yellow;
+	border-radius: 100px;
+}
+
+#button-5:active{
+	transform: scale(.3);
+	border-radius: 500px;
+	opacity: .1;
+}
+
+#button-6 {
+	background: white;
+	border-radius: 30px;
+
+
+}
+#button-6:active{
+	background-color: lightblue;
+	mix-blend-mode: screen;
+	transform: scale(20);
+	transform: rotate(270deg);
+}
+
+#button-7{
+	background: goldenrod;
+	border-radius: 30px;
+}
+#button-7:hover{
+	transform: scale(.1);
+	background-color: transparent;
+}
+
+#button-8{
+	background:grey;
+	border-radius: 30px;
+}
+
+#button-8:hover{
+	transform:scale(4);
+	opacity: .1;
+	background-color: transparent;
+
+}
+
+#button-9{
+	background:lightgreen;
+	border-radius: 30px;
+}
+
+#button-9:active{
+
+	transform: skew(90deg);
+} 
+
+#button-10{
+	background:grey;
+	border-radius: 30px;
+}
+
+#button-10:active{
+	margin-left: 325px;
+}
+
+#button-11{
+	background-color: AquaMarine;
+	border-radius: 30px;
+}
+
+#button-11:hover{
+	background-color: ALiceBlue;
+	transition-duration: 2s;
+}
+
+#button-12{
+	background-color: Khaki;
+	border-radius: 30px;
+}
+
+#button-12:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#button-13{
+	background-color: Lavender;
+	border-radius: 30px;
+}
+
+#button-13:active{
+	opacity: .4;
+	cursor: not-allowed;
+}
+
+#button-14{
+	background-color: azure;
+	border-radius: 30px;
+	-webkit-animation: random 5s infinite;
+	animation: random 5s infinite;
+}
+
+@keyframes random{
+	 15% { background-color: red; } 
+    30% { background-color: yellow; } 
+    45% { background-color: green; } 
+    60% { background-color: lightblue; }
+    75% { background-color: white; }  
+}
+
+#button-15{
+	background-color: papayawhip;
+	border-radius: 30px;
+	-webkit-animation: randoms 3s infinite;
+	animation: randoms 3s infinite;
+
+}
+
+@keyframes randoms{
+	0% {
+    background-color: Magenta;
+  }
+  100% {
+    background-color: Steelblue;
+}}
+
+#button-16{
+	background-color: orange;
+	border-radius: 30px; 
+}
+
+#button-16:active{
+	height: 50px;
+	width:50px;
+	animation-name: stretch;
+  animation-duration: 1.5s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+#button-17{
+	background-color: SpringGreen;
+	border-radius: 30px;
+}
+
+#button-17:hover{
+	transform: perspective(600px) rotateY(45deg);
+}
+
+#button-18{
+	background-color: Teal;
+	border-radius: 30px;
+}
+
+#button-18:active{
+	perspective-origin: 25% 75%;
+	transform: rotate3d(1,1,0,60deg);
+}
+
+#button-19{
+	background-color: thistle;
+	border-radius: 30px;
+}
+
+#button-19:active{
+	transform: scaleX(30);
+}
+
+#button-20{
+	background-color: tomato;
+	border-radius: 30px;
+}
+
+#button-20:active{
+	transform: scaleY(30);
+}
+
+#button-21{
+	background-color: Silver;
+	border-radius: 30px;
+}
+
+#button-21:active{
+	background-color: goldenrod;
+	transform: matrix(1, -0.3, 0, 1, 0, 0) scale(3);
+}
+
+#button-22{
+	background-color: PeachPuff;
+	border-radius: 30px;
+}
+
+#button-22:active{
+	transform: translateX(-10000px);
+}
+
+#button-23{
+	background-color: palevioletred;
+	border-radius: 30px;
+}
+#button-24{
+	background-color: Orchid;
+	border-radius: 30px;
+	cursor: crosshair;
+}
+
+#button-25{
+	background-color: LightSeagreen;
+	border-radius: 30px;
+	filter: invert(0%);
+}
+
+#button-25:active{
+	filter: invert(100%);
+	transform: scale(100);
+	transition-duration: 0s;
+}
+
+#button-26{
+	background-color: red;
+	border-radius: 30px;
+}
+#button-26:active{
+	background-color: grey;
+}
+
+#button-27{
+	background-color: darkgrey;
+	border-radius: 30px;
+	text-align: center;
+	font-size: 25px;
+	font-family: bold;
+}
+
+
+#button-28{
+	background-color: beige;
+	border-radius: 30px;
+}
+#button-28:hover{
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+#button-29{
+	background-color: lime;
+	border-radius: 30px;
+}
+#button-29:hover {
+	background-color: lime;
+	border-radius: 30px;
+  transform-origin: 50% 50%;
+  animation: jump .5s linear alternate infinite;
+}
+
+
+@keyframes jump {
+  0%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
+  40%  {transform: translate3d(0,20%,0) scale3d(.7,1.5,1);}
+  100% {transform: translate3d(0,50%,0) scale3d(1.5,.7,1);}
+}
+
+#button-30{
+	background-color: olive;
+	border-radius: 30px;
+}
+#button-30:hover{
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+
+
+#button-31{
+	background-color: bisque;
+	border-radius: 30px;
+	color: white;
+	font-size: 3em;
+	text-align: center;
+}
+
+#button-31:hover{
+	transform: scale(-2,-2);
+}
+
+#button-32{
+	background-color: Blueviolet;
+	border-radius: 30px;
+	color: white;
+	font-size: 3em;
+	text-align: center;
+}
+
+#button-32:hover{
+	filter: blur(3px);
+}
+
+#button-33{
+	background-color: cadetblue;
+	border-radius: 30px;
+	color: white;
+	font-size: 3em;
+	text-align: center;
+}
+
+#button-33:hover{
+	height: 100%;
+}
+
+#button-34{
+	background-color: chocolate;
+	border-radius: 30px;
+	color: white;
+	font-size: 3em;
+	text-align: center;
+}
+
+#button-34:hover{
+	width: 100%;
+}
+
+#button-35{
+	background-color: lightpink;
+	border-radius: 30px;
+	color: white;
+	font-size: 3em;
+	text-align: center;
+}
+
+.box{
+	background-color: yellow;
+	width: 100%;
+	height: 100%;
+	border-radius: 30px;
+}
+
+.box:hover{
+ filter:blur(10px);
+ opacity: 0.8;
+}
+
+#button-36{
+	background-color: lightpink;
+	border-radius: 30px;
+	color: white;
+	font-size: 3em;
+	text-align: center;
+}
+
+#button-36:hover{
+	border-radius: 50%;
+	background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(red, yellow); /* Standard syntax */
+    -webkit-transform: rotate(360deg);
+}
+
+#button-37{
+	border-radius: 30px;
+	background-color: coral;
+	font-size: 3em;
+	text-align: center;
+	top: 40%;
+}
+
+#button-37:active{
+	filter: grayscale(90%);
+}
+
+#button-38{
+	border-radius: 30px;
+	background-color: crimson;
+
+}
+
+#button-38:hover{
+	border-radius: 50%;
+	transform: rotate(10000deg);
+	transition-duration: 5s;
+
+}
+
+#button-39{
+	border-radius: 30px;
+	background-color: Turquoise;
+}
+
+#button-39:active{
+	perspective-origin: 25% 75%;
+	transform: rotate3d(1,1,0,60deg) scale(4);
+	transition-duration: 5s;
+}
+
+#button-40{
+	border-radius: 30px;
+	background-color: Slategrey;
+}
+
+#button-40:hover{
+	transform: skew(50deg) rotateY(1800deg);
+	transition-duration: 3s;
+    }
+
+#button-41{
+	background-color: darkseagreen;
+	border-radius: 30px;
+	color: white;
+	font-size: 3em;
+	text-align: center;
+}
+.box1 {
+	border-radius: 30px;
+	height: 300px;
+	width: 300px;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, transparent 50%, yellow 50%);
+    transition: background-position 1s;
+}
+
+.box1:hover {
+    background-position: 0 -100%;
+}

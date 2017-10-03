@@ -9,7 +9,7 @@ $(document).ready(function(){
 		
 		n++;
 		for(var i = 1; i < n; i++){
-			$("#container").append('<div id="main"><div id="outer-circle"><div id="inner-circle"><div id="center-circle"><div id="content"><div clas="background></div></div></div></div></div></div>');
+			$("#container").append('<div id="main"><div id="outer-circle"><div id="inner-circle"><div id="center-circle"><div id="content"><div class="background></div></div></div></div></div></div>');
 			
 		
 

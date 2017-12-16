@@ -6,7 +6,18 @@
       background-color: lightgreen;
       opacity: .5;
     }
+
+    body.red {
+      background-color: red;
+    }
+
+    body.blue{
+      background-color: blue;
+    }
   
+    body.orange{
+      background-color: orange;
+    }
   .background{
   background-color: black;
   width: 9000px;

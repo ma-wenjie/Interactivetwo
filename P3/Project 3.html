@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<style>
+		path {
+			fill: #FFF;
+			stroke: #000;
+			stroke-dasharray: 1200;
+			animation: my_animation 10s;
+			position: absolute;
+			top: 100px;
+			margin-right: auto;
+			margin-left: auto;
+			
+		}
+		line{
+			fill:#FFF;
+			stroke: rgb(0,0,255);
+			stroke-dasharray: 1200;
+			animation: my_animation 8s infinite;
+			opacity: .5;
+		}
+		.st2{
+			fill: #FFF;
+			stroke:rgb(255,0,0);
+			stroke-dasharray: 1200;
+			animation: my_animation 15s infinite;
+			opacity: .5;
+
+		}
+		.st3{
+			fill: #FFF;
+			stroke:rgb(255,255,0);
+			stroke-dasharray: 1200;
+			animation: my_animation 12s infinite;
+			opacity: .5;
+		}
+		#kms{
+			width:40%;
+			margin-left: 30%;
+			position: absolute;
+			top: 450px;
+			line-height: 1.4;
+			font-family: 'Roboto', sans-serif;
+		}
+		/*#test1{
+			background:white;
+			fill: white;
+			stroke: white;
+		}
+		#test1:hover{
+			fill: #FFF;
+			stroke-dasharray: 1200;
+			stroke: #000;
+			stroke:rgb(255,0,0);
+			animation: my_animation 10s;
+			
+		}
+		#test{
+			opacity: 1;
+			
+		}
+		#test:click {
+			opacity: 0;
+		}*/
+
+
+		@keyframes my_animation{
+			0%{
+				stroke-dashoffset: 1200;
+				
+			}
+			50%{
+				stroke-dashoffset: 0;
+				
+			}
+			100%{
+				stroke-dashoffset: 	1200;
+				
+			}
+		}
+	</style>
+
+</head>
+<body>
+<a href="Project 3.1.html">
+<svg id="test" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1152 648" style="enable-background:new 0 0 1152 648;" xml:space="preserve">
+
+<g>
+	
+	<path class="st1" d="M286.9,347.9c3.9,2.4,9.6,4.4,15.6,4.4c8.9,0,14.1-4.7,14.1-11.5c0-6.3-3.6-9.9-12.7-13.4
+		c-11-3.9-17.8-9.6-17.8-19.1c0-10.5,8.7-18.3,21.8-18.3c6.9,0,11.9,1.6,14.9,3.3l-2.4,7.1c-2.2-1.2-6.7-3.2-12.8-3.2
+		c-9.2,0-12.7,5.5-12.7,10.1c0,6.3,4.1,9.4,13.4,13c11.4,4.4,17.2,9.9,17.2,19.8c0,10.4-7.7,19.4-23.6,19.4
+		c-6.5,0-13.6-1.9-17.2-4.3L286.9,347.9z"/>
+	<path class="st1" d="M405,324.1c0,23.2-14.1,35.5-31.3,35.5c-17.8,0-30.3-13.8-30.3-34.2c0-21.4,13.3-35.4,31.3-35.4
+		C393.1,290,405,304.1,405,324.1z M352.7,325.2c0,14.4,7.8,27.3,21.5,27.3c13.8,0,21.6-12.7,21.6-28c0-13.4-7-27.4-21.5-27.4
+		C359.9,297.1,352.7,310.4,352.7,325.2z"/>
+	<path class="st1" d="M426.3,291.1h8.7v60.1h28.8v7.3h-37.5V291.1z"/>
+	<path class="st1" d="M514.7,291.1h8.7v60.1h28.8v7.3h-37.5V291.1z"/>
+	<path class="st1" d="M606.8,326.9h-26.2v24.3h29.2v7.3h-37.9v-67.4h36.4v7.3h-27.7v21.3h26.2V326.9z"/>
+	<path class="st1" d="M643,358.5l-17.1-67.4h9.2l8,34.1c2,8.4,3.8,16.8,5,23.3h0.2c1.1-6.7,3.2-14.7,5.5-23.4l9-34h9.1l8.2,34.2
+		c1.9,8,3.7,16,4.7,23.1h0.2c1.4-7.4,3.3-14.9,5.4-23.3l8.9-34h8.9l-19.1,67.4H680l-8.5-35.1c-2.1-8.6-3.5-15.2-4.4-22h-0.2
+		c-1.2,6.7-2.7,13.3-5.2,22l-9.6,35.1H643z"/>
+	<path class="st1" d="M735.3,291.1v67.4h-8.7v-67.4H735.3z"/>
+	<path class="st1" d="M773.3,298.5h-20.5v-7.4h49.9v7.4h-20.6v60h-8.8V298.5z"/>
+	<path class="st1" d="M836.8,298.5h-20.5v-7.4h49.9v7.4h-20.6v60h-8.8V298.5z"/>
+</g>
+</svg>
+</a>
+<p id="kms">
+	Sol Lewitt’s Wall Drawing 273 is configurable; it’s never the same piece twice. What the piece consists of is a set of instructions. Paraphrasing: plot seven grids on seven walls; using crayons, draw some combination of Red/Yellow/Blue lines connecting some combination of points on the seven grids. While the color combination and number of lines are specified per wall, the length and vector of the lines is up to the draftsman. The result is seven walls covered in hundreds of straight lines.
+<br>
+<br>
+The visual itself is oddly impressive work a work considered minimalist: On one wall, there’s a bloom of yellow lines all emanating from the same central point on the grid; on another, dozens of blue and red lines crisscross, creating hundreds of angles. As the piece is currently exhibited at the SF Moma, the walls are placed at non-right angles to one another, and form an enclosed room, with one two-sided wall bisecting the center of the room.
+<br>
+<br>
+The piece is not what you’d describe as a sumptuous visual experience; there is nothing in particular represented. There are just these grids and these lines and these angles. And yet, the art is evocative — of a children’s coloring book (with the three primary colors), of a sunset (the bloom of yellow lines), of Tron (though it didn’t exist in 1975 when the work was created), of being inside some kind of formal experiment, sort of imprisoned and sort of happily participating, and feeling grateful for the invitation.
+<br>
+<br>
+Then there is the issue of the instructions, the fact that the artist is at once in complete control of the final presentation and yet has very limited control. The scale of the work isn’t specified, and apparently it has been displayed before in much smaller spaces. The length of the lines, to which points on the grid they’re connected, where they intersect — these are all out of the artist’s hands. I have to imagine this emphasizes a key attribute of the minimalist movement Lewitt was a part of: The artwork is literally just a set of instructions, and only a half-dozen or so at that. The instructions total maybe a hundred words, albeit a hundred words that contain a formula for creating something enormous, something that, once created, likewise suggests a daunting complexity. It’s like a haiku or sonnet, a thing of such seeming simplicity that contains so much potentiality it rattles on the page like a corn kernel waiting to pop. Lewitt’s piece is both the kernel and the pop. You get to experience both at the same time. What’s more, you get to feel the moment that one thing transforms into the other; it’s playing out in real time as you stand there contemplating the artwork. This potentiality is the most powerful aspect of the piece, and it’s invisible; it doesn’t even exist. The only trace it leaves is in your mind.
+</p>
+
+<!-- <g>
+	<g>
+		<line class="st1" x1="1" y1="0" x2="201" y2="489"/>
+		<line class="st1" x1="0.7" y1="0.8" x2="32.3" y2="167"/>
+		<line class="st1" x1="1.7" y1="0.7" x2="268.3" y2="427"/>
+		<line class="st1" x1="1.7" y1="4.8" x2="268.3" y2="327.7"/>
+		<line class="st1" x1="2.8" y1="1" x2="711" y2="429"/>
+		<line class="st1" x1="1.7" y1="0.7" x2="507" y2="409"/>
+		<line class="st1" x1="1" y1="0" x2="268.3" y2="125.7"/>
+		<line class="st1" x1="0.1" y1="0.5" x2="778.3" y2="287"/>
+		<line class="st1" x1="1" y1="0" x2="572.3" y2="164.3"/>
+		<line class="st1" x1="1" y1="0" x2="437" y2="84.3"/>
+		<line class="st1" x1="1.7" y1="0.7" x2="1049" y2="100.3"/>
+		<line class="st1" x1="1" y1="0" x2="775" y2="21"/>
+	</g>
+	<g>
+		<line class="st1" x1="1" y1="648.3" x2="37" y2="433"/>
+		<line class="st1" x1="135" y1="270.3" x2="1" y2="648.3"/>
+		<line class="st1" x1="369.7" y1="22.3" x2="1" y2="648.3"/>
+		<line class="st1" x1="238" y1="370" x2="1" y2="648.3"/>
+		<line class="st1" x1="745" y1="142" x2="1" y2="648.3"/>
+		<line class="st1" x1="78" y1="581" x2="1" y2="648.3"/>
+		<line class="st1" x1="912" y1="166" x2="1" y2="648.3"/>
+		<line class="st1" x1="3" y1="648" x2="677" y2="370"/>
+		<line class="st1" x1="3" y1="648" x2="307" y2="552"/>
+		<line class="st1" x1="3" y1="648" x2="1016" y2="388"/>
+		<line class="st1" x1="3" y1="648" x2="815" y2="510"/>
+		<line class="st1" x1="1" y1="648.3" x2="477" y2="613"/>
+	</g>
+	<g>
+		<line class="st1" x1="1153" y1="0" x2="813" y2="306"/>
+		<line class="st1" x1="1153" y1="0" x2="714" y2="630"/>
+		<line class="st1" x1="1153" y1="0" x2="1015" y2="505"/>
+		<line class="st1" x1="1153" y1="0" x2="1016" y2="282"/>
+		<line class="st1" x1="1153" y1="0" x2="1119" y2="426"/>
+		<line class="st1" x1="406" y1="105" x2="1153" y2="0"/>
+		<line class="st1" x1="814" y1="21" x2="1150" y2="2"/>
+		<line class="st1" x1="303" y1="267" x2="1146" y2="1"/>
+		<line class="st1" x1="980" y1="41" x2="1153" y2="0"/>
+		<line class="st1" x1="711" y1="185" x2="1153" y2="0"/>
+		<line class="st1" x1="138" y1="510" x2="1153" y2="0"/>
+		<line class="st1" x1="374" y1="471" x2="1153" y2="0"/>
+	</g>
+	<g>
+		<line class="st1" x1="845" y1="122" x2="1154" y2="650"/>
+		<line class="st1" x1="1086" y1="473" x2="1154" y2="650"/>
+		<line class="st1" x1="1085" y1="123" x2="1152" y2="643"/>
+		<line class="st1" x1="746" y1="325" x2="1151" y2="650"/>
+		<line class="st1" x1="1121" y1="612" x2="1150" y2="647"/>
+		<line class="st1" x1="405" y1="185" x2="1147" y2="648"/>
+		<line class="st1" x1="33" y1="108" x2="1151" y2="650"/>
+		<line class="st1" x1="608" y1="451" x2="1154" y2="650"/>
+		<line class="st1" x1="743" y1="551" x2="1151" y2="650"/>
+		<line class="st1" x1="135" y1="472" x2="1154" y2="650"/>
+		<line class="st1" x1="408" y1="570" x2="1147" y2="651"/>
+		<line class="st1" x1="642" y1="630" x2="1151" y2="650"/>
+	</g>
+	<g>
+		<line class="st2" x1="235" y1="23" x2="572" y2="2"/>
+		<line class="st2" x1="33" y1="146" x2="568" y2="1"/>
+		<line class="st2" x1="68" y1="270" x2="568" y2="1"/>
+		<line class="st2" x1="438" y1="125" x2="565" y2="1"/>
+		<line class="st2" x1="568" y1="1" x2="175" y2="610"/>
+		<line class="st2" x1="568" y1="1" x2="508" y2="262"/>
+		<line class="st2" x1="643" y1="450" x2="568" y2="1"/>
+		<line class="st2" x1="677" y1="201" x2="568" y2="1"/>
+		<line class="st2" x1="1113" y1="563" x2="568" y2="1"/>
+		<line class="st2" x1="565" y1="1" x2="1083" y2="205"/>
+		<line class="st2" x1="568" y1="1" x2="1085" y2="18"/>
+		<line class="st2" x1="568" y1="1" x2="675" y2="23"/>
+	</g>
+	<g>
+		<line class="st2" x1="578" y1="647" x2="777" y2="185"/>
+		<line class="st2" x1="742" y1="451" x2="575" y2="650"/>
+		<line class="st2" x1="578" y1="647" x2="709" y2="551"/>
+		<line class="st2" x1="578" y1="647" x2="1082" y2="428"/>
+		<line class="st2" x1="582" y1="647" x2="1048" y2="551"/>
+		<line class="st2" x1="337" y1="45" x2="578" y2="647"/>
+		<line class="st2" x1="607" y1="26" x2="578" y2="647"/>
+		<line class="st2" x1="578" y1="647" x2="543" y2="427"/>
+		<line class="st2" x1="369" y1="410" x2="578" y2="647"/>
+		<line class="st2" x1="507" y1="610" x2="578" y2="647"/>
+		<line class="st2" x1="42" y1="552" x2="578" y2="647"/>
+	</g>
+	<g>
+		<line class="st2" x1="1" y1="331" x2="132" y2="148"/>
+		<line class="st2" x1="1" y1="331" x2="100" y2="268"/>
+		<line class="st2" x1="1" y1="331" x2="745" y2="43"/>
+		<line class="st2" x1="1" y1="331" x2="165" y2="291"/>
+		<line class="st2" x1="4" y1="330" x2="1117" y2="162"/>
+		<line class="st2" x1="4" y1="330" x2="780" y2="266"/>
+		<line class="st2" x1="1" y1="331" x2="684" y2="347"/>
+		<line class="st2" x1="1" y1="331" x2="404" y2="388"/>
+		<line class="st2" x1="1" y1="331" x2="1081" y2="611"/>
+		<line class="st2" x1="1" y1="331" x2="407" y2="551"/>
+		<line class="st2" x1="1" y1="331" x2="35" y2="368"/>
+		<line class="st2" x1="1" y1="331" x2="37" y2="506"/>
+	</g>
+	<g>
+		<line class="st2" x1="1150" y1="325" x2="844" y2="40"/>
+		<line class="st2" x1="1150" y1="325" x2="1117" y2="221"/>
+		<line class="st2" x1="1150" y1="325" x2="540" y2="18"/>
+		<line class="st2" x1="1150" y1="325" x2="1082" y2="305"/>
+		<line class="st2" x1="1150" y1="325" x2="65" y2="168"/>
+		<line class="st2" x1="1150" y1="325" x2="441" y2="306"/>
+		<line class="st2" x1="1150" y1="325" x2="35" y2="392"/>
+		<line class="st2" x1="1150" y1="325" x2="646" y2="408"/>
+		<line class="st2" x1="1150" y1="325" x2="410" y2="610"/>
+		<line class="st2" x1="1150" y1="325" x2="951" y2="467"/>
+		<line class="st2" x1="1151" y1="328" x2="884" y2="628"/>
+		<line class="st2" x1="1151" y1="328" x2="1120" y2="448"/>
+	</g>
+	<g>
+		<line class="st3" x1="575" y1="320" x2="547" y2="127"/>
+		<line class="st3" x1="575" y1="320" x2="641" y2="27"/>
+		<line class="st3" x1="575" y1="320" x2="641" y2="228"/>
+		<line class="st3" x1="575" y1="320" x2="881" y2="42"/>
+		<line class="st3" x1="575" y1="320" x2="906" y2="131"/>
+		<line class="st3" x1="575" y1="320" x2="437" y2="148"/>
+		<line class="st3" x1="575" y1="320" x2="700" y2="273"/>
+		<line class="st3" x1="541" y1="645" x2="575" y2="320"/>
+		<line class="st3" x1="444" y1="592" x2="575" y2="320"/>
+		<line class="st3" x1="406" y1="490" x2="575" y2="320"/>
+		<line class="st3" x1="575" y1="320" x2="46" y2="591"/>
+		<line class="st3" x1="575" y1="320" x2="77" y2="450"/>
+		<line class="st3" x1="575" y1="320" x2="271" y2="351"/>
+		<line class="st3" x1="575" y1="320" x2="134" y2="290"/>
+		<line class="st3" x1="575" y1="320" x2="122" y2="1"/>
+		<line class="st3" x1="575" y1="320" x2="30" y2="186"/>
+		<line class="st3" x1="1095" y1="348" x2="575" y2="320"/>
+		<line class="st3" x1="951" y1="450" x2="575" y2="320"/>
+		<line class="st3" x1="1019" y1="572" x2="575" y2="320"/>
+		<line class="st3" x1="905" y1="626" x2="575" y2="320"/>
+		<line class="st3" x1="609" y1="407" x2="575" y2="320"/>
+	</g>
+	
+</g> -->
+
+
+</body>
+</html>
